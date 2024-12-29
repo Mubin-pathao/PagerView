@@ -9,9 +9,8 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "PagerView",
-            targets: ["PagerView"]),
+        .library(name: "PagerView", targets: ["PagerView"]),
+        .library(name: "PagerRx", targets: ["PagerRx"]),
     ],
     dependencies: [
 //        .package(path: "../ScrollShadow"),
