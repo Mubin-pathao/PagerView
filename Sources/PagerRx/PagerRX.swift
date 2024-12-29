@@ -9,6 +9,6 @@ import UIKit
 import PagerView
 import RxSwift
 
-class PagerRX {
+internal class PagerRX {
     
 }

@@ -2,7 +2,6 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-
 let package = Package(
     name: "PagerView",
     platforms: [
@@ -15,8 +14,8 @@ let package = Package(
             targets: ["PagerView"]),
     ],
     dependencies: [
-        .package(path: "../ScrollShadow"),
-        .package(path: "../ZoomableImageView"),
+//        .package(path: "../ScrollShadow"),
+//        .package(path: "../ZoomableImageView"),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0"))
     ],
     targets: [
@@ -25,10 +24,10 @@ let package = Package(
         .target(
             name: "PagerView",
             dependencies: [
-                "ScrollShadow"
+//                "ScrollShadow"
             ]
         ),
-        .target(name: "PagerRX",
+        .target(name: "PagerRx",
                 dependencies: [
                     "PagerView",
                     .product(name: "RxSwift", package: "RxSwift")
