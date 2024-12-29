@@ -25,6 +25,9 @@ let package = Package(
             name: "PagerView",
             dependencies: [
                 "ZoomableImageView"
+            ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy")
             ]
         ),
         .target(name: "PagerRx",
