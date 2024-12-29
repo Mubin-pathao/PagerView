@@ -17,6 +17,15 @@
         "revision" : "10d06f6a33bafae8c164fbfd1f03391f6d4692b3",
         "version" : "5.20.0"
       }
+    },
+    {
+      "identity" : "zoomableimageview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mubin-pathao/ZoomableImageView.git",
+      "state" : {
+        "revision" : "a2bca687c5b0d1ebe2675d252384c2aa403969ac",
+        "version" : "1.0.0"
+      }
     }
   ],
   "version" : 2
