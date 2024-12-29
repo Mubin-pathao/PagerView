@@ -11,6 +11,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(name: "PagerView", targets: ["PagerView"]),
         .library(name: "PagerRx", targets: ["PagerRx"]),
+        .library(name: "PagerRxDynamic", type: .dynamic, targets: ["PagerRx"])
     ],
     dependencies: [
 //        .package(path: "../ScrollShadow"),
