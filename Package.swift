@@ -14,11 +14,26 @@ let package = Package(
             name: "PagerView",
             targets: ["PagerView"]),
     ],
+    dependencies: [
+        .package(path: "../ScrollShadow"),
+        .package(path: "../ZoomableImageView"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0"))
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "PagerView"),
+            name: "PagerView",
+            dependencies: [
+                "ScrollShadow"
+            ]
+        ),
+        .target(name: "PagerRX",
+                dependencies: [
+                    "PagerView",
+                    .product(name: "RxSwift", package: "RxSwift")
+                ]
+               ),
         .testTarget(
             name: "PagerViewTests",
             dependencies: ["PagerView"]),
