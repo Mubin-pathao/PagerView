@@ -13,8 +13,8 @@ let package = Package(
         .library(name: "PagerRx", targets: ["PagerRx"]),
     ],
     dependencies: [
-//        .package(path: "../ScrollShadow"),
-//        .package(path: "../ZoomableImageView"),
+        .package(path: "../ScrollShadow"),
+        .package(path: "../ZoomableImageView"),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0"))
     ],
     targets: [
@@ -23,7 +23,7 @@ let package = Package(
         .target(
             name: "PagerView",
             dependencies: [
-//                "ScrollShadow"
+                "ScrollShadow"
             ]
         ),
         .target(name: "PagerRx",
